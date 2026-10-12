@@ -1,0 +1,343 @@
+html {
+  scrpoll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Kanit ', sans-serif;
+  font-weight: 400;
+
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666666;
+  margin-bottom: 12px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul li a.active {
+  background-color: #04AA6D;
+}
+
+
+.profile {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.profile-image {
+  width: 350px;
+  height: auto;
+  object-fit: cover;
+}
+
+.profile-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-container {
+  width: 250px;
+  height: auto;
+  margin: 0 auto 2rem;
+}
+
+h4 {
+  color: #E0E0E0;
+}
+
+
+.contact {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.image-row {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+  gap: 12px;
+  box-sizing: border-box;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  align-items: flex-start;
+}
+
+.image-box {
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-box img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.image-caption {
+  margin: 8px 0 0 0;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #ffffff;
+  padding: 60px 40px;
+}
+
+/* ---------- ส่วนหัวข้อ ---------- */
+.section-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ---------- Grid ที่คุมการ์ดทั้ง 3 ใบ ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---------- ตัวการ์ดแต่ละใบ ---------- */
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 6px;
+  /* มุมโค้งเล็กน้อยของรูป */
+  border: 1px solid #eaeaea;
+  /* เส้นขอบบางๆ รอบรูป */
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+/* ---------- แถวข้อมูล admin / วันที่ ---------- */
+
+
+.card-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ---------- Responsive: จอเล็กให้เรียงเป็นคอลัมน์เดียว ---------- */
+@media (max-width: 800px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #ffffff;
+  padding: 80px 40px;
+}
+
+/* ---------- Layout หลัก แบ่งซ้าย-ขวา ---------- */
+.portfolio-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* ---------- ฝั่งซ้าย: ข้อความ ---------- */
+.portfolio-label {
+  color: #ff8a5c;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.portfolio-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #1a1a2e;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  color: #6b6b7b;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 420px;
+}
+
+
+/* ---------- ฝั่งขวา: กริดสถิติ 2x2 ---------- */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 30px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- กล่องไอคอนสีเขียว ---------- */
+.stat-icon {
+  width: 56px;
+  height: 56px;
+  background: #000000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  border: none;
+  /* ไม่มี border ที่กล่องไอคอน */
+}
+
+.stat-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a1a2e;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.stat-desc {
+  font-size: 15px;
+  color: #6b6b7b;
+  line-height: 1.6;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 800px) {
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.skill-icon {
+  width: 45px;
+  height: 45px;
+
+  flex-shrink: 0;
+
+  border: 1px solid #ccc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #333;
+}
